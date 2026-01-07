@@ -1,0 +1,14 @@
+When you see the "cannot find symbol" error in Java, 
+it means the compiler doesn't recognize an identifier (variable, class, method, etc.)
+
+1. Read the error message carefully:
+The ^ points to the problematic symbol
+
+Pro Tips:
+Use an IDE (like IntelliJ IDEA, Eclipse, or VS Code) - they highlight these errors immediately
+
+Pay attention to the exact symbol name in the error message
+
+Remember that Java's standard classes follow strict naming conventions (PascalCase for classes, camelCase for methods)
+
+The error always means: "I looked for this name, but I couldn't find anything with that name in the current context."

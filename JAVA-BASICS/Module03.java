@@ -18,3 +18,13 @@
 // > / < : Plus grand / Plus petit
 
 // >= / <= : Plus grand ou égal / Plus petit ou égal
+
+// Operateur Logique 
+
+// && : 2 conditions doivent etre vrai.
+// AND : 1 des conditions est vrai.
+
+// Incrementation 
+// i++
+// Decrementation 
+// i--

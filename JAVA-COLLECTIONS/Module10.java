@@ -21,3 +21,13 @@
 // maBibliotheque.size() : Connaitre la taille de la liste.
 
 // maBibliotheque.get(0) : Récupérer le premier livre (l'index commence à 0).
+
+// maBibliotheque.remove(0) : Supprime le premier livre (l'index commence à 0).
+
+// maBibliotheque.set(0, Toto) : Met a jour le premier livre (l'index commence à 0).
+
+// Tableaux : 1. import java.util.Arrays; Importer
+//            2. char tableau[] = new char[4]; Creer
+//            3. tableau[0] = 'a'; Affecter
+//            4. System.out.println(tableau[0]); Afficher
+//            5. Methodes : Arrays.toString(tableau); Arrays.sort(tableau); Arrays.binarySearch(tableau);

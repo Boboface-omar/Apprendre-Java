@@ -15,7 +15,17 @@
 
 // double : Un nombre à virgule (pour les prix, moyennes...).	19.99
 
+// float
+
 // boolean	: Vrai ou Faux (logique binaire).	true / false
+
+// char : Caractere standard.  '%, @, &'
+
+// Byte :
+
+// Short :
+
+// long :
 
 // Syntaxe : Type nomVariable = valeur;
 
@@ -26,3 +36,20 @@
 
 // On peut coller (concaténer) des variables avec le signe +
 // System.out.println("Profil : " + prenom + " a " + age + " ans.");
+
+// Portee : 
+// Variable global : Si on veut l'utiliser dans la method main on met static : static int age = 23;
+// Variable local : Dans la main methode.
+
+// Conversion : double number1 = 5.8;
+        //    int number2 = (int)number1;
+
+// Formatter :  int number1 = 8;
+    //   String format = String.format("Nombre : %d", number1);
+    //   System.out.println(format);
+
+// METHODES: Maj et Min : System.out.println(nom.toUpperCase()); System.out.println(nom.toLowerCase());
+
+//   Est egale a : System.out.println(nombre1.equals(valeur));
+
+// Remplacer : System.out.println(phrase.replace("rouge", "bleu"));
