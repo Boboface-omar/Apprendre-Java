@@ -26,8 +26,18 @@
 
 // maBibliotheque.set(0, Toto) : Met a jour le premier livre (l'index commence à 0).
 
+// Parcourir la liste
+        // System.out.println("\nTous les livres :");
+        // for (String livre : maBibliotheque) {
+        //     System.out.println("- " + livre);
+        // }
+
 // Tableaux : 1. import java.util.Arrays; Importer
-//            2. char tableau[] = new char[4]; Creer
-//            3. tableau[0] = 'a'; Affecter
-//            4. System.out.println(tableau[0]); Afficher
-//            5. Methodes : Arrays.toString(tableau); Arrays.sort(tableau); Arrays.binarySearch(tableau);
+//            2. int tableau[] = new int[4] ou int tableau[] = {1, 2, 3}  ; Creer
+//            3. tableau[0] = 1 ; Affecter
+//            4. System.out.println(tableau[0]); Afficher un element du tableau par son index
+//            5. Methodes : Arrays.toString(tableau); Arrays.sort(tableau) : Trier; Arrays.binarySearch(tableau, valeurRechercher) : Chercher 
+//               un element dans un tableau. Cette méthode nécessite deux arguments : le tableau ET l'élément à rechercher.; 
+//               IMPORTANT : binarySearch nécessite un tableau TRIÉ
+//            6. tableau.length : Donne la taille du tableau
+// Les tableaux en Java ne peuvent pas être affichés directement avec println(), il faut utiliser Arrays.toString(nomduTableau);
