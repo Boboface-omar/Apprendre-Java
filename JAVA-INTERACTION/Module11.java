@@ -17,4 +17,5 @@
 
 // Fermer le scanner : scanner.close();
 
-// Conversion : // int age = Integrer.parseInt(scanner.nextLine())
+// Conversion : // int age = Integer.parseInt(scanner.nextLine())
+//                 boolean man = Boolean.parseBoolean(scanner.nextLine());
