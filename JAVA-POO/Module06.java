@@ -1,4 +1,5 @@
 // Les Méthodes (Les Actions)
+// Une méthode est une fonction qui appartient à une classe
 // Un objet ne sert pas qu'à stocker des données (Attributs), il sert aussi à faire des choses (Méthodes).
 
 // Attributs = Ce que l'objet EST (Adjectifs/Noms : titre, couleur...).
