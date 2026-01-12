@@ -58,6 +58,22 @@
 // }
 
 
+// 1. throw new IllegalArgumentException("Message"); : C'est comme crier "ERREUR !" quand quelqu'un fait une bêtise.
+         // STOP ! Le programme s'arrête ici
+        // On force à corriger l'erreur
+
+// 2. .isEmpty() : Une méthode qui vérifie si une String est vide.
+
+// 3. !numeroCompte.matches("[0-9]+") : Une expression régulière (regex) qui vérifie le format.
+
+// 4. @Override et toString() : Une façon de personnaliser l'affichage de ton objet.
+
+
+
+
+
+
+
 
 
 

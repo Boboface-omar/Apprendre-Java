@@ -24,3 +24,10 @@
 
 // 3. Lecture d'une valeur
 // System.out.println(monLivre.titre);
+
+
+                                                 // POO SCHEMA :
+
+
+// CREER LA CLASSE ==========> DECLARER LES VARIABLES ET LES RENDRE PRIVATE ==========> Constructeur avec validation ==========> GETTERS ==========> SETTERS avec validation ==========> MÉTHODES MÉTIER ==========> MÉTHODE D'AFFICHAGE.
+//                                                  TESTER DANS CLASSE PRINCIPAL Main;
