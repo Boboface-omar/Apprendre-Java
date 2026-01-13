@@ -7,7 +7,7 @@ public class Livre {
         String auteur;
         int pages;
         boolean dispo;
-
+ 
         // // 🏗️ Le Constructeur
         public Livre(String titre, String auteur, int pages) {
                 this.titre = titre;

@@ -25,6 +25,10 @@
 // 3. Lecture d'une valeur
 // System.out.println(monLivre.titre);
 
+// private String secret;      // ❌ Enfant ne voit pas
+// protected String heritage;  // ✅ Enfant peut accéder
+ // public String connu;        // ✅ Tout le monde voit
+
 
                                                  // POO SCHEMA :
 

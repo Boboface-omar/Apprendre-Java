@@ -6,7 +6,7 @@ public class Main {
         Livre bouquin = new Livre("Harry Potter", "J.K. Rowling", 300);
         BD tintin = new BD ("Tintin", "Hergé", 62, true);
 
-        // Methode Simple d'ajout
+        // Methode Simple d'ajout 
         // bouquin.titre = "Harry Potter";
         // bouquin.auteur = "J.K. Rowling";
         // bouquin.pages = 300;

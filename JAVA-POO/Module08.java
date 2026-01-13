@@ -18,4 +18,7 @@
 
 // extends Livre : "Je suis un Livre, mais amélioré."
 
-// super(...) : "Envoie ces infos au constructeur du parent (Livre) pour qu'il les gère."
+                                                       // Polymorphisme
+                                                       
+
+// super(nomDeVariable) : "Envoie ces infos au constructeur du parent (Livre) pour qu'il les gère." : Herite des attributs du parent

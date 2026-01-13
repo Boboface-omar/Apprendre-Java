@@ -10,7 +10,7 @@ public class BD extends Livre {
         // 2. Ensuite, on règle la partie spécifique à la "BD"
         this.enCouleur = enCouleur;
     }
-
+ 
     // Redéfinition (ou Overriding en anglais): Polymorphisme
     @Override
     public void afficherInfos() {
