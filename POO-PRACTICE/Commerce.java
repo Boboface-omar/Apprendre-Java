@@ -1,0 +1,131 @@
+import java.time.LocalDate;
+
+public class Commerce {
+    public static void main(String[] args) {
+        System.out.println("🏪 === BOUTIQUE EN LIGNE ===\n");
+        
+        // 1. Créer une boutique
+        Boutique maBoutique = new Boutique();
+        
+        try {
+            // 2. Créer différents types de paiements
+            // Carte bancaire (expiration dans 2 ans)
+            PaiementCarte paiement1 = new PaiementCarte(
+                125.50, 
+                "1234567890123456", 
+                "BOBO DIALLO", 
+                LocalDate.now().plusYears(2)
+            );
+            
+            // PayPal
+            PaiementPayPal paiement2 = new PaiementPayPal(
+                75.30,
+                "bobo.diallo@gmail.com",
+                "monMotDePasseSecret"
+            );
+            
+            // Espèces (client donne 50€ pour un achat de 45€)
+            PaiementEspece paiement3 = new PaiementEspece(
+                45.00,
+                50.00
+            );
+            
+            // Autres paiements
+            PaiementCarte paiement4 = new PaiementCarte(
+                200.00,
+                "9876543210987654",
+                "ALICE MARTIN",
+                LocalDate.now().plusMonths(6)
+            );
+            
+            PaiementPayPal paiement5 = new PaiementPayPal(
+                30.00,
+                "client@domaine.com",
+                "autreMotDePasse"
+            );
+            
+            // 3. Les ajouter à la boutique
+            maBoutique.ajouterPaiement(paiement1);
+            maBoutique.ajouterPaiement(paiement2);
+            maBoutique.ajouterPaiement(paiement3);
+            maBoutique.ajouterPaiement(paiement4);
+            maBoutique.ajouterPaiement(paiement5);
+            
+            // 4. Afficher les infos avant traitement
+            System.out.println("\n📄 Infos avant traitement :");
+            paiement1.afficherInfo();
+            
+            // 5. Traiter tous les paiements
+            maBoutique.traiterTousLesPaiements();
+            
+            // 6. Afficher un rapport complet
+            maBoutique.afficherRapport();
+            
+            // 7. Tests supplémentaires
+            System.out.println("🧪 === TESTS SUPPLÉMENTAIRES ===");
+            
+            // Test d'erreur : carte expirée
+            try {
+                PaiementCarte carteExpiree = new PaiementCarte(
+                    100.00,
+                    "1111222233334444",
+                    "TEST",
+                    LocalDate.now().minusDays(1)  // Expirée hier !
+                );
+            } catch (IllegalArgumentException e) {
+                System.out.println("Test réussi - Carte expirée détectée : " + e.getMessage());
+            }
+            
+            // Test d'erreur : montant insuffisant en espèces
+            try {
+                PaiementEspece pasAssez = new PaiementEspece(
+                    100.00,
+                    80.00  // Pas assez !
+                );
+                pasAssez.traiterPaiement();
+            } catch (Exception e) {
+                System.out.println("Test réussi - Montant insuffisant détecté");
+            }
+            
+        } catch (Exception e) {
+            System.out.println("❌ Erreur : " + e.getMessage());
+            e.printStackTrace();
+        }
+        
+        System.out.println("\n✅ Programme terminé avec succès !");
+    }
+}
+
+
+// Explique moi tout ca je viens de le decouvrir
+// import java.time.LocalDate; 
+// import java.util.UUID;
+// private LocalDate date;
+// import java.time.Period;
+// this.numeroTransaction = genererNumeroTransaction();  // Génère automatiquement
+// this.date = LocalDate.now();  // Date du jour
+// private String genererNumeroTransaction() {
+//         // Génère un ID unique comme "TXN-7b9c4a..."
+//         return "TXN-" + UUID.randomUUID().toString().substring(0, 8).toUpperCase();
+// replaceAll("\\s+", "")
+// if (dateExpiration.isBefore(LocalDate.now())) {
+//             throw new IllegalArgumentException("La carte est expirée");
+//         }
+//     }
+//  try {
+//             Thread.sleep(500);
+//         } catch (InterruptedException e) {
+//             Thread.currentThread().interrupt();
+//         }
+// double chance = Math.random();
+//         if (chance > 0.1) {  // 90% de chance de réussite
+//             System.out.println("✅ Paiement accepté par la banque");
+//             setEstValide(true);  // ⚠️ Important : utiliser le setter protégé
+//         } else {
+//             System.out.println("❌ Fond insuffisants ou carte refusée");
+//         }
+// String.format() ?? Permet de faire quoi
+// long joursRetard = ChronoUnit.DAYS.between(dateLimite, dateRetour);
+// import java.time.temporal.ChronoUnit;  // ⚠️ IMPORT MANQUANT !
+
+

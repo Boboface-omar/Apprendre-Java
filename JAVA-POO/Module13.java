@@ -10,6 +10,10 @@
     // ...
 // }
 
+// public class Guerrier extends Personnage {
+    //...
+// }
+
 // Interdiction de créer : Si une classe est abstract, tu ne peux PAS faire new Personnage(). 
 
 // C'est interdit. Tu pourras seulement faire new Guerrier() ou new Mage().
