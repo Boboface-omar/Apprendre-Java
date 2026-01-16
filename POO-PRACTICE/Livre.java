@@ -37,7 +37,7 @@ public class Livre extends Document {
             throw new IllegalArgumentException("Le genre est obligatoire");
         }
         
-        // ⚠️ Validation : liste des genres acceptés
+        // ⚠️ Validation : liste des genres acceptés ====================A reviser====================
         String[] genresValides = {"ROMAN", "POLICIER", "SCIENCE-FICTION", 
                                  "FANTASTIQUE", "HISTORIQUE", "BIOGRAPHIE", 
                                  "DOCUMENTAIRE", "JEUNESSE"};

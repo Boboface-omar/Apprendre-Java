@@ -97,7 +97,7 @@ public class Commerce {
 }
 
 
-// Explique moi tout ca je viens de le decouvrir
+// Maintenant qu'on a fini avec le POO, Explique moi tout ces nouveau truc que je viens de decouvrir de maniere simple avec des cas d'utilisations.
 // import java.time.LocalDate; 
 // import java.util.UUID;
 // private LocalDate date;
@@ -127,5 +127,11 @@ public class Commerce {
 // String.format() ?? Permet de faire quoi
 // long joursRetard = ChronoUnit.DAYS.between(dateLimite, dateRetour);
 // import java.time.temporal.ChronoUnit;  // ⚠️ IMPORT MANQUANT !
+// String typeMaj = type != null ? type.trim().toUpperCase() : "";
+// if (dateRetour.isAfter(dateLimite)) {
+            // long joursRetard = ChronoUnit.DAYS.between(dateLimite, dateRetour);
+//try.... catch (IllegalArgumentException e) {
+//             System.out.println("Erreur: " + e.getMessage());
+// String.join();
 
 
