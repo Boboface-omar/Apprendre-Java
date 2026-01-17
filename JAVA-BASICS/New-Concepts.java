@@ -235,6 +235,6 @@
 // // Calcul avec condition
 // double prix = (quantite > 10) ? prix * 0.9 : prix;  // 10% de réduction si > 10
 
-
+// Projet avec abstract, interface, enumeration pour finir.
 
 // ======================== Ces outils rendent ton code plus propre, plus fiable et plus professionnel ! 🚀 =================
